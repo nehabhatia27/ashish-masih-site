@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: #171310; } /* no cream strip under the footer / when pulling past the ends */
 
 body {
   background: var(--paper);
@@ -558,3 +558,6 @@ gallery-grid[layout="masonry"] > media-placeholder { margin-bottom: var(--space-
   .video-row::-webkit-scrollbar { display: none; }
   .video-row video-tile { flex: 0 0 74%; scroll-snap-align: start; }
 }
+
+.band-block { margin-top: var(--space-3xl); }
+@media (max-width: 700px) { .band-block { margin-top: var(--space-md); } }

@@ -32,7 +32,8 @@ class SiteFooter extends HTMLElement {
           .cols { gap: var(--space-xl, 48px); }
           .container { padding: 0 20px; }
         }
-        .social a { color: var(--cream-faint, rgba(243,237,226,.46)); border-bottom: 1px solid var(--line-dark, rgba(243,237,226,.16)); padding-bottom: 2px; margin-right: var(--space-md, 22px); text-decoration: none; transition: color var(--dur-fast, 180ms), border-color var(--dur-fast, 180ms); }
+        .social a svg { display: block; width: 22px; height: 22px; }
+        .social a { color: var(--cream-faint, rgba(243,237,226,.46)); border-bottom: 1px solid var(--line-dark, rgba(243,237,226,.16)); padding-bottom: 2px; margin-right: 0; text-decoration: none; display: inline-block; border-bottom: none; transition: color var(--dur-fast, 180ms), border-color var(--dur-fast, 180ms); }
         .social a:hover { color: var(--cream, #f3ede2); border-color: var(--cream, #f3ede2); }
       </style>
       <div class="container">
@@ -61,7 +62,7 @@ class SiteFooter extends HTMLElement {
           <div class="bottom">
             <span>© ${year} Ashish Masih. All rights reserved.</span>
             <div class="social">
-              <a href="https://www.instagram.com/ashish_masih19" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.instagram.com/ashish_masih19" target="_blank" rel="noopener" aria-label="Ashish Masih on Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none"/></svg></a>
             </div>
           </div>
         </footer>

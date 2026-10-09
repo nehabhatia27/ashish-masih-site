@@ -36,6 +36,10 @@ class ContentSpread extends HTMLElement {
           .media { grid-row: ${reverse ? '2' : '1'}; }
           .text { grid-row: ${reverse ? '1' : '2'}; }
         }
+        @media (max-width: 700px) {
+          .spread { padding: var(--space-xl, 40px) 0 0; gap: var(--space-md, 24px); }
+          ::slotted([slot="body"]):last-of-type { margin-bottom: 0 !important; }
+        }
       </style>
       <div class="spread">
         <div class="media"><slot name="media"></slot></div>
