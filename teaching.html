@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drum Classes — Ashish Masih | Studio, Home &amp; Online Lessons in Delhi NCR</title>
+<meta name="description" content="Learn drums with Ashish Masih — one-on-one lessons in his Delhi studio, home lessons in South Delhi and parts of Gurgaon, or online over Zoom. Rockschool & Trinity grade prep for all ages.">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body style="--accent: var(--accent-teach); --accent-2: var(--accent-teach-2); --accent-rgb: var(--accent-teach-rgb);">
+
+<!-- This page re-themes to a warm gold accent (vs. the site's default red)
+     for wayfinding — every component reads var(--accent)/--accent-2/--accent-rgb,
+     so overriding them here cascades through Shadow DOM automatically. -->
+<site-nav active="teaching"></site-nav>
+
+<!-- HERO — asymmetric: title cols 1-8, kicker offset on its own row -->
+<header class="section-dark" style="position:relative; min-height:90svh; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:var(--space-2xl); overflow:hidden;">
+  <div style="position:absolute; inset:0; z-index:0;">
+    <media-placeholder src="assets/images/teaching-classroom.jpg" alt="Ashish smiling as a young student plays a snare drum during a lesson" fit="contain" feather="0.28" focus="50% 50%" priority style="height:100%;"></media-placeholder>
+    <div class="hero-shade-teach"></div>
+  </div>
+  <div class="container grid-12" style="position:relative; z-index:2;">
+    <div class="col-start-1 col-span-8" data-reveal>
+      <span class="eyebrow">Drum Classes · In the Studio · At Home · Online</span>
+      <h1 style="color:var(--cream); font-size:clamp(2.6rem,6.5vw,5.4rem); margin-bottom:var(--space-lg);">Learn from<br><em style="color:var(--accent-2);">a working pro</em></h1>
+      <p class="dek" style="margin-bottom:var(--space-xl);">Drum lessons for ages 5 to 56 — in Ashish's studio, at your home, or online. Taught by a touring drummer and session artist.</p>
+      <div class="link-row">
+        <a href="#contact-cta" class="link-cta">Enquire About Classes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CURRENTLY TEACHING AT — second fold, straight after the hero -->
+<section class="section-tight">
+  <div class="container">
+    <span class="eyebrow" data-reveal>Currently Teaching At</span>
+    <div class="info-row" data-reveal>
+      <div class="info-item">
+        <h4>German Embassy School</h4>
+        <p>New Delhi</p>
+      </div>
+      <div class="info-item">
+        <h4>King's College UK</h4>
+        <p>British Board School, Delhi NCR</p>
+      </div>
+      <div class="info-item">
+        <h4>Music Edu</h4>
+        <p>Private Music Academy, RK Puram</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THREE WAYS TO LEARN — one big photographic panel + two stacked panels -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">How Classes Work</span>
+      <h2>Three ways to learn</h2>
+    </div>
+    <div class="ways" data-reveal>
+
+      <article class="way way-a has-photo">
+        <div class="way-media"><media-placeholder src="assets/images/studio-kit.jpg" alt="Overhead view of Ashish playing a white drum kit in his studio, surrounded by acoustic panels" fit="cover" focus="50% 45%" style="height:100%;"></media-placeholder></div>
+        <span class="way-chip">Offline · One-on-one</span>
+        <h3>In Ashish's studio</h3>
+        <p>One-on-one sessions with Ashish, in person, at his studio — set up inside his home. Ask for the address when you enquire.</p>
+      </article>
+
+      <article class="way way-b">
+        <span class="way-chip">South Delhi · parts of Gurgaon</span>
+        <h3>Home lessons</h3>
+        <p>Ashish comes to you — in South Delhi and a few parts of Gurgaon closer to Delhi. For Noida and farther areas, the studio or online lessons are the way to go.</p>
+      </article>
+
+      <article class="way way-c">
+        <span class="way-chip">Zoom · Google Meet</span>
+        <h3>Online lessons</h3>
+        <p>Live, for students in areas far from the studio — Noida, farther parts of Gurgaon and beyond.</p>
+        <p class="way-note"><strong>No drum kit yet?</strong> For the first few weeks — even months — all you need is a practice pad and a pair of sticks.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU LEARN — a single editorial statement instead of a list -->
+<section class="section section-alt">
+  <div class="container grid-12">
+    <div class="col-start-1 col-span-4" data-reveal>
+      <span class="eyebrow">What You'll Learn</span>
+      <h2>All levels. All ages.</h2>
+    </div>
+    <p class="pull-numbers learn-line col-start-6 col-span-7" data-reveal>Students from <strong>5 to 56</strong>. Preparation for <strong>Rockschool</strong> and <strong>Trinity</strong> grades. And Ashish's own concepts — blended with technique he learned directly from his guru.</p>
+  </div>
+</section>
+
+<!-- GURU -->
+<section class="section-alt" style="padding:var(--space-lg) 0;">
+  <div class="container">
+    <content-spread index="Mentor" reverse data-reveal>
+      <media-placeholder slot="media" tag="Placeholder — Photo" desc="Ashish with his guru, Manoj Maveli" icon="users" ratio="4-5" tone="paper" tilt="right"></media-placeholder>
+      <h3 slot="heading">Mentored by Manoj Maveli</h3>
+      <p slot="body">Ashish's foundation and technique were shaped under Manoj Maveli — a Berklee College of Music (Boston, USA) alumnus who trains India's top drummers. It's a mentorship, and a journey of learning, that continues to this day.</p>
+    </content-spread>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="eyebrow">Student Testimonials</span>
+      <h2>What students say</h2>
+    </div>
+    <div class="grid-12" data-reveal>
+      <pull-quote class="col-span-6" name="Liraan" meta="Student, age 10" photo="assets/images/student-liraan.jpg" photo-alt="Liraan, a 10-year-old drum student" focus="47% 38%">Ashish sir is a very good teacher. He makes learning the drums fun and engaging. He is always so encouraging, which helps me practice and get better at the drums!</pull-quote>
+      <pull-quote class="col-span-6" name="Yohan Shivhare" meta="Student, age 15" photo="assets/images/student-yohaan.jpg" photo-alt="Yohan, a 15-year-old drum student" focus="40% 40%">I have been learning with Ashish for a year now and not only is he a good teacher but also a great drummer with an infectious passion.</pull-quote>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">In The Studio</span>
+      <h2>Lessons in action</h2>
+    </div>
+    <div data-reveal>
+      <gallery-grid>
+        <media-placeholder src="assets/images/teaching-classroom.jpg" alt="Ashish smiling as a young student plays a snare drum during a lesson" focus="50% 60%"></media-placeholder>
+        <media-placeholder tag="Video — coming soon" desc="Student lesson clip" icon="play"></media-placeholder>
+        <media-placeholder tag="Video — coming soon" desc="Student progress clip" icon="play"></media-placeholder>
+      </gallery-grid>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-dark cta-close" id="contact-cta">
+  <div class="container" data-reveal>
+    <span class="eyebrow">Start Learning</span>
+    <h2>Ready to pick up<br><em>the sticks?</em></h2>
+    <p class="dek" style="margin:0 auto var(--space-xl); text-align:center;">Reach out with your (or your child's) age, experience level and where you're based — we'll find the right format: studio, home or online.</p>
+    <div class="link-row" style="justify-content:center;">
+      <a href="contact.html" class="link-cta">Enquire About Classes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<site-footer></site-footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

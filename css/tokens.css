@@ -1,0 +1,101 @@
+/* ============================================
+   DESIGN TOKENS — single source of truth.
+   Consumed by base.css (light DOM) and by every
+   Web Component's Shadow DOM (custom properties
+   pierce the shadow boundary by design).
+   ============================================ */
+
+:root {
+  /* ---- color: paper (light) chapters ---- */
+  --paper: #f3ede2;
+  --paper-alt: #eae1cf;
+  --ink: #1c1712;
+  --ink-soft: #4c453b;
+  --ink-faint: #948c7d;
+  --line: rgba(28, 23, 18, 0.15);
+  --line-soft: rgba(28, 23, 18, 0.09);
+
+  /* ---- color: dark (cover) chapters ---- */
+  --dark: #171310;
+  --dark-alt: #211b15;
+  --cream: #f3ede2;
+  --cream-soft: rgba(243, 237, 226, 0.7);
+  --cream-faint: rgba(243, 237, 226, 0.46);
+  --line-dark: rgba(243, 237, 226, 0.16);
+
+  /* ---- color: accent (primary — red/orange, "performance" energy) ---- */
+  --accent: #c8432a;
+  --accent-2: #f2905f;
+  --accent-rgb: 200, 67, 42;
+  --accent-soft: rgba(200, 67, 42, 0.14);
+
+  /* ---- color: accent (secondary — gold, "teaching" wayfinding) ----
+     Pages override --accent/--accent-2/--accent-rgb with these at the
+     <body> level so every component (nav, buttons, glows, chips) that
+     reads var(--accent) re-themes automatically — custom properties
+     pierce the Shadow DOM boundary by design. ---- */
+  --accent-teach: #c99a3a;
+  --accent-teach-2: #e8c874;
+  --accent-teach-rgb: 201, 154, 58;
+
+  /* ---- spacing scale (strict, 4px atomic unit) ---- */
+  --space-3xs: 0.25rem;   /* 4  */
+  --space-2xs: 0.5rem;    /* 8  */
+  --space-xs: 0.75rem;    /* 12 */
+  --space-sm: 1rem;       /* 16 */
+  --space-md: 1.5rem;     /* 24 */
+  --space-lg: 2rem;       /* 32 */
+  --space-xl: 3rem;       /* 48 */
+  --space-2xl: 4rem;      /* 64 */
+  --space-3xl: 6rem;      /* 96 */
+  --space-4xl: 8rem;      /* 128 */
+  --space-5xl: 10rem;     /* 160 */
+
+  /* ---- type ---- */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --text-2xs: 0.65rem;
+  --text-xs: 0.72rem;
+  --text-sm: 0.85rem;
+  --text-base: 1.03rem;
+  --text-md: 1.25rem;
+  --text-lg: clamp(1.3rem, 2.6vw, 1.8rem);
+  --text-xl: clamp(2rem, 4.6vw, 3.4rem);
+  --text-2xl: clamp(2.6rem, 6vw, 5rem);
+  --text-3xl: clamp(3rem, 8vw, 6.6rem);
+
+  /* ---- radius ---- */
+  --radius-sm: 2px;
+  --radius-md: 8px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ---- framed page (contained dark canvas, not edge-to-edge) ---- */
+  --page-bg: #000;
+  --frame-pad: clamp(10px, 1.6vw, 22px);
+
+  /* ---- glass (glassmorphism overlay panels) ---- */
+  --glass-blur: 18px;
+  --glass-bg-dark: rgba(23, 19, 16, 0.5);
+  --glass-bg-light: rgba(243, 237, 226, 0.55);
+  --glass-border-dark: rgba(243, 237, 226, 0.18);
+  --glass-border-light: rgba(28, 23, 18, 0.16);
+  --glass-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+
+  /* ---- motion (micro-interaction tokens) ---- */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --dur-fast: 180ms;
+  --dur-med: 320ms;
+  --dur-slow: 640ms;
+  --lift-hover: -4px;
+  --scale-hover: 1.015;
+  --scale-press: 0.985;
+
+  /* ---- grid (asymmetric 12-col system) ---- */
+  --grid-cols: 12;
+  --grid-gap: clamp(16px, 2.4vw, var(--space-lg));
+  --container-max: 1280px;
+  --container-pad: clamp(20px, 4vw, 48px);
+}
