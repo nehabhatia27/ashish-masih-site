@@ -9,6 +9,7 @@ import './components/gallery-grid.js';
 import './components/pull-quote.js';
 import './components/journey-chapter.js';
 import './components/content-spread.js';
+import './components/video-tile.js';
 
 import { initReveal } from './reveal.js';
 

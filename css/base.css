@@ -543,3 +543,18 @@ gallery-grid[layout="masonry"] > media-placeholder { margin-bottom: var(--space-
   .big-links a { font-size: clamp(1.5rem, 7vw, 2rem); }
   .hero-shade-teach { background: linear-gradient(180deg, rgba(23,19,16,.35) 0%, rgba(23,19,16,0) 20%, rgba(23,19,16,.2) 45%, rgba(23,19,16,.88) 100%); }
 }
+
+/* ---------- vertical video row (YouTube Shorts) ---------- */
+.video-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-md); }
+@media (max-width: 900px) { .video-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* on phones: one tall tile at a time, swipe sideways — big enough to actually watch */
+@media (max-width: 560px) {
+  .video-row {
+    display: flex; gap: var(--space-sm);
+    overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+    margin: 0 -20px; padding: 0 20px var(--space-sm);
+    scroll-padding: 0 20px; scrollbar-width: none;
+  }
+  .video-row::-webkit-scrollbar { display: none; }
+  .video-row video-tile { flex: 0 0 74%; scroll-snap-align: start; }
+}
